@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Hub</title>
+    <link rel="stylesheet" href="landing_page.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Pizza Hub!</h1>
+        <nav>
+            <ul>
+                <li><a href="#pizzeria-directory">Pizzeria Directory</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#recipes">Pizza Recipes</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h2>Your one-stop destination for all things pizza!</h2>
+        </section>
+
+        <section id="pizzeria-directory">
+            <h2>Pizzeria Directory</h2>
+            <div id="pizzeria-list">
+                <div class="pizzeria">
+                    <h3>Joe's Pizza</h3>
+                    <p>Location: New York, NY</p>
+                    <p>Rating: ★★★★☆</p>
+                </div>
+                <div class="pizzeria">
+                    <h3>Luigi's Pizzeria</h3>
+                    <p>Location: Chicago, IL</p>
+                    <p>Rating: ★★★★★</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="menu">
+            <h2>Menu</h2>
+            <div class="pizza-item">
+                <h3>Margherita Pizza</h3>
+                <p>Ingredients: Tomato sauce, mozzarella cheese, fresh basil.</p>
+                <p>Price: $12.99</p>
+            </div>
+            <div class="pizza-item">
+                <h3>Pepperoni Pizza</h3>
+                <p>Ingredients: Tomato sauce, mozzarella cheese, pepperoni.</p>
+                <p>Price: $14.99</p>
+            </div>
+            <div class="pizza-item">
+                <h3>BBQ Chicken Pizza</h3>
+                <p>Ingredients: BBQ sauce, grilled chicken, red onions, cilantro.</p>
+                <p>Price: $15.99</p>
+            </div>
+            <div class="pizza-item">
+                <h3>Veggie Pizza</h3>
+                <p>Ingredients: Tomato sauce, mozzarella cheese, bell peppers, onions, mushrooms, olives.</p>
+                <p>Price: $13.99</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+                <br>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                <br>
+                <label for="address">Address:</label>
+                <input type="text" id="address" required>
+                <br>
+                <label for="pizza-size">Pizza Size:</label>
+                <select id="pizza-size" required>
+                    <br>
+                    <option value="" disabled selected>Select a size</option>
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select>
+                <br>
+                <label for="message">Message:</label>
+                <textarea id="message" required></textarea>
+                
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Pizza Hub. All rights reserved.</p>
+    </footer>
+
+    <script src="landing_page.js"></script>
+</body>
+</html>
